@@ -2,5 +2,5 @@
 
 Versão beta 1.0
 
-[Clique aqui para visualizar](https://thiagofspaiva.github.io/Site-netflix-de-Aulas/)
+[Clique aqui para visualizar](https://thiagofspaiva.github.io/Site-Aula-Tipo-Netflix/)
 
