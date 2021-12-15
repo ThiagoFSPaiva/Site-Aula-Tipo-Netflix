@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Users\\ztrax\\OneDrive\\Documentos\\Estudo\\HTML,CSS\\SITE\\versao3"
+		},
+		{
+			"path": "..\\..\\..\\Users\\ztrax\\Documents\\petshopthiagao"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\genius"
+		},
+		{
+			"path": "..\\..\\project-flexbox-dio"
+		},
+		{
+			"path": "..\\..\\project-flexbox-dio\\flex-projeto"
+		},
+		{
+			"path": "..\\..\\netflix-clone"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "versao3"
+	}
+}

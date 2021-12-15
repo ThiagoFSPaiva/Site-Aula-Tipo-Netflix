@@ -1,3 +1,19 @@
+#perfil{
+    margin-right: 30px;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+}
+#lado_direito{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.bell,.search{
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+}
 
 @font-face {
     font-family: jose;
@@ -15,18 +31,27 @@ body,ul,li,p{
 }
 
 body{
+    overflow-x: hidden;
     background-color: #141414;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     user-select: none;
     }
 .logo{
-    display: block;
     margin-left: 20px;
     font-size: 50px;
     font-family: bebas;
     color: #a323c4;
     text-shadow: 2px 2px 3px rgb(68, 6, 63);
+}
+nav{
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-image:linear-gradient(to top, transparent, rgba(10, 3, 4, 0.959));
 }
 .menu{
     font-family: jose;
@@ -34,12 +59,12 @@ body{
     padding: 10px;
     display: flex;
     list-style: none;
-    background-image:linear-gradient(to top, transparent, rgba(10, 3, 4, 0.959));
-    align-items: center;
-    flex-wrap: wrap;
+    
+  
     
 }
 .menu2{
+    align-items: center;
     padding-left: 40px;
     list-style: none;
 }
@@ -132,11 +157,13 @@ main{
 
 }
 .movierow--list{
-    width:9999999999px; /* mais tarde colocar com react para width ser igual a quantidadeDeFilmes da sessao * a largura da img*/
+    width:3000px; /* mais tarde colocar com react para width ser igual a quantidadeDeFilmes da sessao * a largura da img*/
 
 }
 .movierow--item{
-    width: 288px;
+    border-radius: 2%;
+    background-color: rgba(224, 75, 217, 0.5);
+    width: 286px;
     height: 164px;
     padding: 0;
     display: inline-block;
@@ -175,10 +202,12 @@ footer{
         padding: 10px;
     }
     .menu{
+        align-items: center;
         padding-left: 0;
         
     }
     .menu2{
+        
         padding-left: 0px;
         margin-top: 10px;
     }
@@ -190,9 +219,11 @@ footer{
         font-size: 40px;
     }
     .menu2{
+        user-select: none;
         opacity: 0;
     }
     .list{
+        align-items: center;
         display: flex;
         width: 40px;
         height: 40px;
@@ -201,8 +232,37 @@ footer{
     }
 }
 @media (max-width:484px){
+    .movierow{
+        margin-left: 10px;;
+
+    }
+    nav{
+        overflow-x: hidden;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    #lado_direito{
+        position: absolute;
+        left: 200px;
+    }
+    
     .menu2{
+        transform: translateX(100%);
         padding-left: 0;
+    }
+    .movierow--item{
+        margin-left: 5px;
+        width: 145px;
+        height: 200px;
+    }
+    .movierow--list{
+        
+        display: flex;
+        
+    }
+    .movierow--listarea{
+        overflow-x: scroll;
     }
 }
 @media (min-width:600px){
@@ -239,5 +299,6 @@ footer{
             width: 80px;
         }
     
+
 
 }
