@@ -1,3 +1,6 @@
+:root {
+    --neon-color: #db14b0;
+}
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
   }
@@ -10,6 +13,7 @@ html {
     
 }
 .dropdown-menu a{
+    text-align: center;
     text-decoration: none;
     font-size: 1rem;
     color: white;
@@ -60,16 +64,7 @@ html {
     align-items: center;
     margin-right: 20px;
 }
-.search-box:hover{
-    background-color: #141414;
-    border: solid white 1px;
-    cursor: pointer;
-}
-.search-box:hover > .search-text{
-    width: 240px;
-    border-radius: 0%;
-    padding: 0 5px;
-}
+
 .search-text{
     text-decoration: none;
     color: white;
@@ -176,7 +171,7 @@ nav{
 
 }
 .dentro_banner{
-    text-align: left;
+    display: inherit;
     margin-top: 200px;
     margin-left: 60px;
     font-size: 30px;
@@ -185,31 +180,12 @@ nav{
 
 
 }
-.dentro_banner p{
-    text-align: left;
-    
-}
-.dentro_banner a{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding: 20px;
-    margin: 20px;
-    width: 120px;
-    display: block;
-    color: white;
-    text-decoration: none;
-    border: solid rgba(255, 255, 255, 0.63) 1px;
-    font-size: 20px;
-    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    
 
-}
 .dentro_banner a:hover{
-     color: #ffffff;
-     background-color: rgba(255, 255, 255, 0.521);
      transform:scale(1.25,1.25);
+    
 }
+
 main{
     padding: 0px;
     width: 100%;
@@ -266,6 +242,17 @@ footer{
     padding: 40px;
     text-shadow: 2px 2px 2px rgb(58, 57, 57);
 }
+.search-box:hover{
+    background-color: #141414;
+    border: solid white 1px;
+    cursor: pointer;
+}
+.search-box:hover > .search-text{
+    width: 240px;
+    border-radius: 0%;
+    padding: 0 5px;
+}
+
 @media (max-width:424px){
     
     .banner{
@@ -277,9 +264,8 @@ footer{
         font-size: 11px;
     }
     .dentro_banner a{
-        width: 24%;
-        font-size: 12px;
-        padding: 10px;
+        zoom: 50%;
+
     }
     .menu{
         align-items: center;
@@ -300,7 +286,7 @@ footer{
     }
     .menu2{
         user-select: none;
-        opacity: 0;
+        opacity: 1;
     }
     .list{
         align-items: center;
@@ -311,19 +297,21 @@ footer{
         opacity: 1;
     }
 }
-@media (max-width:669px){
-    
+@media (max-width:778px){
+
+    .search-box:hover > .search-text{
+        width: 96px;
+        padding: 0 5px;
+    }
     nav{
         background-color: #1414143d;
     }
     .dropdown-menu a:hover{
         background-color: #751a8b69;
-        border-radius: 50%;
        
     }
     .dropdown-menu{
         
-        padding-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -350,18 +338,12 @@ footer{
     .logo{
         margin-left: 20px;
     }
-    #lado_direito{
-        
-    }
     
     .menu2{
         display: none;
-        padding-left: 0;
     }
     .movierow--item{
         margin-left: 5px;
-        width: 145px;
-        height: 200px;
     }
     .movierow--list{
         
@@ -371,4 +353,34 @@ footer{
     .movierow--listarea{
         overflow-x: scroll;
     }
+}
+.dentro_banner a{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 1.6rem;
+	overflow: hidden;
+	transition: 0.2s;
+}
+.dentro_banner a{
+    margin-left: 30px;
+	color: white;
+	background-color: var(--neon-color);
+	box-shadow: 0 0 10px var(--neon-color), 0 0 40px var(--neon-color), 0 0 80px var(--neon-color);
+	transition-delay: 0.2s;
+}
+.dentro_banner a{
+	color: white;
+	background-color: var(--neon-color);
+	box-shadow: 0 0 10px var(--neon-color), 0 0 40px var(--neon-color), 0 0 80px var(--neon-color);
+	transition-delay: 0.2s;
+}
+
+.dentro_banner a span{
+	position: absolute;
+	display: block;
 }
