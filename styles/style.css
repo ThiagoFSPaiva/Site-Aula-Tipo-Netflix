@@ -1,3 +1,36 @@
+
+
+.dropdown-menu{
+    margin: auto;
+    font-family: jose;
+    display: none;  
+    color: white;
+    
+}
+.dropdown-menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.logo2{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.logo2 img{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+}
+.logo img{
+    width: 130px;
+    height: 50px;
+}
+.pequisa{
+    display: flex;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rebeccapurple;
+}
 #perfil{
     margin-right: 30px;
     border-radius: 10%;
@@ -188,6 +221,7 @@ footer{
     text-shadow: 2px 2px 2px rgb(58, 57, 57);
 }
 @media (max-width:424px){
+    
     .banner{
         height: 400px;
         background-position: right;
@@ -231,7 +265,32 @@ footer{
         opacity: 1;
     }
 }
-@media (max-width:484px){
+@media (max-width:660px){
+    nav{
+        background-color: #1414143d;
+    }
+    .dropdown-item:hover{
+        background-color: rgba(128, 0, 128, 0.342);
+        border-radius: 50%;
+    }
+    .dropdown-menu{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dropdown-menu a{
+        margin-right: 40px;
+    }
+    .logo2 img{
+        display: flex;
+    }
+    .logo img{
+        display: none;
+    }
+    .pequisa{
+        display: none;
+    }
     .movierow{
         margin-left: 10px;;
 
@@ -243,12 +302,11 @@ footer{
         margin-left: 20px;
     }
     #lado_direito{
-        position: absolute;
-        left: 200px;
+        
     }
     
     .menu2{
-        transform: translateX(100%);
+        display: none;
         padding-left: 0;
     }
     .movierow--item{
