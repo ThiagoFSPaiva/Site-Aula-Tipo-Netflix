@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="principal">
+    <header class="banner">
+        <nav>
+            <div class="menu">
+                <a href="#" class="logo2"><img src="imgs/logo2.png" alt=""></a>
+                <a href="#" class="logo"><img src="imgs/logo.png" alt=""></a>
+            
+            <ul class="menu2">
+                <li ><a href="index.html"class="home">Inicio</a></li>
+                <li><a href="#" class="resto">Aulas</a></li>
+                <li><a href="#" class="resto">Cursos</a></li>
+                <li><a href="#" class="resto">Minha lista</a></li>              
+
+               
+                </ul>
+            </div>
+            
+            <div id="lado_direito">
+                
+                <div class="search-box">
+                   
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                <a href="#"class="search-btn"></a>
+                <input class="search-text"type="text" placeholder="Títulos,Cursos e Professores">
+                
+                </div>
+
+                  <a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                  </svg></a>
+                  <div class="foto" onmouseenter=AbrirMenu()>
+                      <a href="#" >
+                  <img id="perfil" src="imgs/foto.jpg" alt="">
+                    </a> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="down" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg> 
+                
+                
+                </div>
+             </div>
+            
+            
+             <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Aulas</a>
+                <a class="dropdown-item" href="#">Cursos</a>
+                <a class="dropdown-item" href="#">Categoria <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="down" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></a>
+                
+              </div>
+            </nav>
+       
+            <div class="featured--vertical">
+                
+                <div class="featured--horizontal">
+                    
+                    <div class="info">
+                        
+                    <h1>Enem 2021</h1>
+                    <h2>Começe agora seus estudos</h2>
+                    <p>Aulas com foco no enem com assuntos e temas abordados no edital para voce se seperar na prova,com os melhores professores e metodos de ensino.</p>
+                        <div class="botoes">
+                        <a class="botao" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                          </svg>Assistir</a>
+                        <a class="botao" id="botao2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                          </svg>Minha lista</a>
+                        </div>
+                    </div>
+                    
+                    <div class="config"  >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="up" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                      </svg>
+                        <ul class="perfil_menu" onmouseleave=FecharMenu()>
+                            <a href="#"><li>Meu Aprendizado</li></a>
+                            <a href="#"><li>Editar Perfil</li></a>
+                            <a href="#"><li>Configurações da Conta</li></a>
+                            <a href="#"><li>Central de Ajuda</li></a>
+                            <a href="#"><li>Sair</li></a>
+
+                        </ul>
+                   
+                    </div>
+               
+            </div>
+    
+        
+
+    </header>
+    
+        <div class="movierow">
+            
+            <h2>Materias Básicas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('imgs/teste1.jpg')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste3.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste4.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste5.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste6.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/portugues2.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste1.jpg')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('imgs/teste2.jpg')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Lingua Portuguesa</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Super Combo Exatas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>História</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Materias Básicas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Materias Básicas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Materias Básicas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="movierow">
+            
+            <h2>Materias Básicas</h2>
+            <div class="movierow--listarea">
+                <div class="movierow--list">
+                    <div class="movierow--item" style="background-image: url('')">
+                       
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    <div class="movierow--item" style="background-image: url('')">
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+       
+        
+   </div>
+
+
+
+    <footer>Todos os direitos Reservados de Thiago Fellipe <br>
+        Copyright 2021&copy;</footer>
+
+</body>
+</html>

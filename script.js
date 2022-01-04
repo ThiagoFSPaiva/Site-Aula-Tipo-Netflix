@@ -1,10 +1,8 @@
-const btnmobile = document.getElementById('btn-mobile');
+function AbrirMenu(){
+    document.getElementsByClassName("config")[0].style.display = "flex";
+}
+function FecharMenu(){
+    document.getElementsByClassName("config")[0].style.display = "none";
 
-
-
-function menu(){
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active')
 
 }
-btnmobile.addEventListener('click',menu);

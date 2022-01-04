@@ -1,10 +1,100 @@
 :root {
     --neon-color: #db14b0;
 }
+
+
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
   }
-
+.info h1{
+    
+    margin: 0;
+    font-size: 5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    font-family: jose;
+    padding-left: 50px;
+    color: white;
+    padding-top: 30vh;
+    margin: 0;
+    max-width: 600px;
+}
+.up{
+    position: absolute;
+    top: -1.5vh;
+    right: 2.3vh;
+}
+.info p{
+    
+    font-size: 1.4rem;
+}
+.botoes{
+    display: flex;
+    font-size: 1.4rem;
+    padding-top: 40px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #db14b0;
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #f9f9f9;
+     border-radius: 4px;
+    text-decoration: none;
+    background-color: white;
+}
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.911);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color), 0 0 40px var(--neon-color);
+}
+#botao2{
+    color:white;
+    background-color: #db14b0;
+    border: 1px solid #db14b0;
+}
+#botao2:hover{
+    background-color: #f05fd0;
+}
+.config{
+    opacity: 0.9;
+    border: 0.1px solid rgba(255, 255, 255, 0.144);
+    display: none;
+    height: 25vh;
+    width: 20vh;
+    background-color:#0c0316;
+    top: 8vh;
+    right: 4vh;
+    position: absolute;
+    color: white;
+}
+.perfil_menu{
+    height: 25vh;
+    width: 20vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:#0c0316;
+}
+.config a{
+    color: white;
+    text-decoration: none;
+}
+.config a:hover{
+    text-decoration: underline;
+}
+.config ul li{
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
 .dropdown-menu{
     margin: auto;
     font-family: jose;
@@ -19,13 +109,13 @@ html {
     color: white;
 }
 .logo2{
-    margin-top: -5px;
+    margin-top: -8px;
     margin-left: 10px;
 }
 .logo2 img{
     display: none;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
 }
 .logo img{
     width: 130px;
@@ -37,11 +127,22 @@ html {
     padding: 10px;
     background-color: rebeccapurple;
 }
-#perfil{
+.foto{
+    color: white;
+    display: flex;
+    align-items: center;
     margin-right: 30px;
+}
+.foto:hover > .down{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+#perfil{
     border-radius: 10%;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px;
 }
 #lado_direito{
     cursor: pointer;
@@ -88,6 +189,7 @@ html {
 
 }
 
+
 @font-face {
     font-family: jose;
     src: url(../font/NetflixSansRegular.ttf);
@@ -105,11 +207,12 @@ body,ul,li,p{
 
 body{
     overflow-x: hidden;
-    background-color: #141414;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     user-select: none;
-    }
+    background-color: #0c0316;
+}
+
 .logo{
     margin-left: 20px;
     font-size: 50px;
@@ -124,7 +227,8 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-image:linear-gradient(to top, transparent, rgba(10, 3, 4, 0.959));
+    background: linear-gradient(to right,#0c0316 10%,transparent 60%);
+    
 }
 .menu{
     font-family: jose;
@@ -163,42 +267,20 @@ nav{
     color: grey;
 }
 .banner{
-    background-image: url(../imgs/fundo.png);
-    height: 800px;
-    background-position: right center;
+    background-image:  url(../imgs/fundo1.jpg);
+    background-position: right,center;
     background-size: cover;
     border-top: solid 0.1px transparent;  /* corrigir bug do espaço em branco de cima */
 
 }
-.dentro_banner{
-    display: inherit;
-    margin-top: 200px;
-    margin-left: 60px;
-    font-size: 30px;
-    color: white;
-    
 
-
-}
-
-.dentro_banner a:hover{
-     transform:scale(1.25,1.25);
-    
-}
-
-main{
-    padding: 0px;
-    width: 100%;
-    margin: auto;
-
-
-}
 .movierow{
     margin-left: 55px;
     margin-bottom: 71px;
 
 }
 .movierow h2{
+    margin-top: 0;
     font-family: jose;
     margin-bottom: 20px;
     color:white ;
@@ -206,6 +288,21 @@ main{
 
 
 
+}
+.featured--vertical{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to top,#8616a1 5%,transparent 50%);
+}
+.featured--horizontal{
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#0c0316 10%,transparent 60%);
+}
+.featured--info{
+    position: 0;
+    color: white;
 }
 .movierow--listarea{
     overflow-x: hidden;
@@ -216,6 +313,8 @@ main{
 
 }
 .movierow--item{
+    
+    background-size: cover;
     border-radius: 2%;
     background-color: rgba(224, 75, 217, 0.5);
     width: 286px;
@@ -252,21 +351,24 @@ footer{
     border-radius: 0%;
     padding: 0 5px;
 }
-
+.teste{
+    background-color: rgba(0, 0, 0, 0.63);
+}
 @media (max-width:424px){
+    .featured--vertical{
+        background: linear-gradient(to top,#8616a1 0%,transparent 0%);
+    }
+    .info{
+
+        margin: auto;
+        zoom: 55%;
+    }
     
     .banner{
         height: 400px;
         background-position: right;
     }
-    .dentro_banner{
-        margin-top: 100px;
-        font-size: 11px;
-    }
-    .dentro_banner a{
-        zoom: 50%;
-
-    }
+    
     .menu{
         align-items: center;
         padding-left: 0;
@@ -295,6 +397,9 @@ footer{
         height: 40px;
         color: white;
         opacity: 1;
+    }
+    .perfil_menu{
+        height: 30vh;
     }
 }
 @media (max-width:778px){
@@ -353,34 +458,4 @@ footer{
     .movierow--listarea{
         overflow-x: scroll;
     }
-}
-.dentro_banner a{
-	position: relative;
-	display: inline-block;
-	padding: 15px 30px;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	text-decoration: none;
-	font-size: 1.6rem;
-	overflow: hidden;
-	transition: 0.2s;
-}
-.dentro_banner a{
-    margin-left: 30px;
-	color: white;
-	background-color: var(--neon-color);
-	box-shadow: 0 0 10px var(--neon-color), 0 0 40px var(--neon-color), 0 0 80px var(--neon-color);
-	transition-delay: 0.2s;
-}
-.dentro_banner a{
-	color: white;
-	background-color: var(--neon-color);
-	box-shadow: 0 0 10px var(--neon-color), 0 0 40px var(--neon-color), 0 0 80px var(--neon-color);
-	transition-delay: 0.2s;
-}
-
-.dentro_banner a span{
-	position: absolute;
-	display: block;
 }
